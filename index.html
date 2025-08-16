@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Retro</title>
+  <title>Mi Web con Datos</title>
   <style>
     body {
       background-color: #000;
@@ -11,37 +11,56 @@
       font-family: "Courier New", monospace;
       margin: 0;
       padding: 20px;
-      text-align: center;
     }
     h1 {
-      font-size: 2.5rem;
+      text-align: center;
       margin-bottom: 20px;
     }
-    p {
-      font-size: 1.2rem;
-    }
-    .boton {
-      display: inline-block;
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 20px;
-      padding: 10px 20px;
-      border: 2px solid #00ff00;
-      border-radius: 8px;
-      background: transparent;
-      color: #00ff00;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: 0.3s;
     }
-    .boton:hover {
-      background: #00ff00;
-      color: #000;
+    th, td {
+      border: 1px solid #00ff00;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #003300;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido Página de Prueba</h1>
-  <p>Página publicada con <strong>GitHub Pages</strong>.</p>
-  <a href="https://github.com/" target="_blank" class="boton">Ver mi GitHub</a>
+  <h1>Usuarios (datos desde JSON)</h1>
+  <table id="tablaUsuarios">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Rol</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Cargar el archivo JSON y mostrar en la tabla
+    fetch("data.json")
+      .then(response => response.json())
+      .then(datos => {
+        const tbody = document.querySelector("#tablaUsuarios tbody");
+        datos.forEach(usuario => {
+          const fila = document.createElement("tr");
+          fila.innerHTML = `
+            <td>${usuario.id}</td>
+            <td>${usuario.nombre}</td>
+            <td>${usuario.rol}</td>
+          `;
+          tbody.appendChild(fila);
+        });
+      })
+      .catch(error => console.error("Error cargando datos:", error));
+  </script>
 </body>
 </html>
