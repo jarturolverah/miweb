@@ -1,5 +1,0 @@
-[
-  { "id": 1, "nombre": "Arturo", "rol": "Administrador" },
-  { "id": 2, "nombre": "María", "rol": "Usuario" },
-  { "id": 3, "nombre": "Luis", "rol": "Invitado" }
-]
