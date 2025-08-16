@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Web con Datos</title>
+  <title>CRUD Retro en GitHub Pages</title>
   <style>
     body {
       background-color: #000;
@@ -29,38 +29,107 @@
     th {
       background-color: #003300;
     }
+    input, button {
+      background: #000;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      padding: 5px 10px;
+      margin: 5px;
+      font-family: "Courier New", monospace;
+    }
+    button:hover {
+      background: #00ff00;
+      color: #000;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <h1>Usuarios (datos desde JSON)</h1>
+  <h1>Usuarios (CRUD con LocalStorage)</h1>
+
+  <!-- Formulario para agregar usuarios -->
+  <div>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="rol" placeholder="Rol">
+    <button onclick="agregarUsuario()">Agregar</button>
+  </div>
+
+  <!-- Tabla -->
   <table id="tablaUsuarios">
     <thead>
       <tr>
         <th>ID</th>
         <th>Nombre</th>
         <th>Rol</th>
+        <th>Acciones</th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
 
   <script>
-    // Cargar el archivo JSON y mostrar en la tabla
-    fetch("data.json")
-      .then(response => response.json())
-      .then(datos => {
-        const tbody = document.querySelector("#tablaUsuarios tbody");
-        datos.forEach(usuario => {
-          const fila = document.createElement("tr");
-          fila.innerHTML = `
-            <td>${usuario.id}</td>
-            <td>${usuario.nombre}</td>
-            <td>${usuario.rol}</td>
-          `;
-          tbody.appendChild(fila);
-        });
-      })
-      .catch(error => console.error("Error cargando datos:", error));
+    // --- Cargar usuarios desde LocalStorage o iniciar vacío ---
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [
+      { id: 1, nombre: "Arturo", rol: "Administrador" },
+      { id: 2, nombre: "María", rol: "Usuario" },
+      { id: 3, nombre: "Luis", rol: "Invitado" }
+    ];
+
+    function guardar() {
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    }
+
+    function mostrarUsuarios() {
+      const tbody = document.querySelector("#tablaUsuarios tbody");
+      tbody.innerHTML = "";
+      usuarios.forEach((u, index) => {
+        const fila = document.createElement("tr");
+        fila.innerHTML = `
+          <td>${u.id}</td>
+          <td contenteditable="true" onblur="editarUsuario(${index}, 'nombre', this.innerText)">${u.nombre}</td>
+          <td contenteditable="true" onblur="editarUsuario(${index}, 'rol', this.innerText)">${u.rol}</td>
+          <td>
+            <button onclick="borrarUsuario(${index})">Borrar</button>
+          </td>
+        `;
+        tbody.appendChild(fila);
+      });
+    }
+
+    function agregarUsuario() {
+      const nombre = document.getElementById("nombre").value.trim();
+      const rol = document.getElementById("rol").value.trim();
+      if (!nombre || !rol) {
+        alert("Completa los campos");
+        return;
+      }
+      const nuevo = {
+        id: usuarios.length ? usuarios[usuarios.length - 1].id + 1 : 1,
+        nombre,
+        rol
+      };
+      usuarios.push(nuevo);
+      guardar();
+      mostrarUsuarios();
+      document.getElementById("nombre").value = "";
+      document.getElementById("rol").value = "";
+    }
+
+    function editarUsuario(index, campo, valor) {
+      usuarios[index][campo] = valor;
+      guardar();
+    }
+
+    function borrarUsuario(index) {
+      if (confirm("¿Seguro que deseas borrar este usuario?")) {
+        usuarios.splice(index, 1);
+        guardar();
+        mostrarUsuarios();
+      }
+    }
+
+    // --- Inicializar ---
+    mostrarUsuarios();
   </script>
 </body>
 </html>
