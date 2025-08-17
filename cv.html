@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV — Arturo Olvera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículum Vitae de Arturo Olvera">
+  <style>
+    :root{
+      --bg:#0b0b0b; --fg:#c7f7c7; --muted:#8fdc8f; --accent:#38b000; --card:#111; --border:#1f1f1f;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif}
+    a{color:var(--muted); text-decoration:none} a:hover{color:#baffba; text-decoration:underline}
+    .wrap{max-width:920px; margin:auto; padding:24px}
+    header{display:flex; gap:20px; align-items:center; padding:24px; background:linear-gradient(180deg,#0f1a0f,transparent); border-bottom:1px solid var(--border)}
+    .avatar{width:96px; height:96px; border-radius:50%; object-fit:cover; border:2px solid var(--accent); background:#0a0a0a}
+    h1{margin:0 0 4px; font-size:28px; line-height:1.2}
+    .subtitle{margin:0; color:var(--muted)}
+    .actions{margin-left:auto; display:flex; gap:10px; flex-wrap:wrap}
+    .btn{padding:10px 14px; border:1px solid var(--accent); border-radius:14px; background:#0f0; background:transparent; color:var(--fg); cursor:pointer}
+    .btn:hover{background:#102410}
+    .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:24px; margin-top:24px}
+    section{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px}
+    h2{margin:0 0 12px; font-size:18px; color:#b9ffb9}
+    h3{margin:12px 0 6px; font-size:16px}
+    .item{padding:10px 0; border-top:1px dashed var(--border)} .item:first-child{border-top:none}
+    .meta{font-size:13px; color:var(--muted)}
+    ul{margin:8px 0 0 18px}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .chip{border:1px solid var(--border); padding:6px 10px; border-radius:999px; background:#0e0e0e}
+    footer{color:#7abf7a; font-size:13px; text-align:center; padding:24px 0}
+    @media (max-width:860px){ .grid{grid-template-columns:1fr} header{flex-direction:column; align-items:flex-start} .actions{margin-left:0} }
+    /* Versión para imprimir (fondo claro) */
+    @media print{
+      :root{--bg:#fff; --fg:#000; --muted:#333; --accent:#111; --card:#fff; --border:#ddd}
+      a{text-decoration:underline}
+      .btn,.actions{display:none !important}
+      body{background:#fff; color:#000}
+      header{background:#fff; border-color:#ddd}
+      section{break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Reemplaza assets/foto.jpg por tu ruta real o elimina la img -->
+      <img class="avatar" src="assets/foto.jpg" alt="Foto de Arturo">
+      <div>
+        <h1>Arturo Olvera</h1>
+        <p class="subtitle">Gestión de activos • Bases de datos • Automatización de flujos con VBA y PHP</p>
+        <p class="meta">
+          <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a> · 
+          <a href="tel:+5215512345678">+52 1 55 1234 5678</a> · 
+          <a href="https://jarturolverah.github.io/miweb/" target="_blank" rel="noopener">Sitio web</a> ·
+          <a href="https://github.com/jarturolverah" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+      <div class="actions">
+        <!-- Si subes tu PDF a /docs/CV_Arturo_Olvera.pdf, este botón funcionará -->
+        <a class="btn" href="docs/CV_Arturo_Olvera.pdf" download>⬇️ Descargar PDF</a>
+        <a class="btn" href="mailto:tu.correo@ejemplo.com?subject=Contacto%20por%20CV">✉️ Contactar</a>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section>
+        <h2>Experiencia</h2>
+
+        <div class="item">
+          <h3>Administrador de Sistemas — Empresa XYZ</h3>
+          <div class="meta">Ene 2023 – Actual · Ciudad de México (Híbrido)</div>
+          <ul>
+            <li>Diseñé y desplegué base de datos de control de vehículos y activos en Synology + PHP.</li>
+            <li>Automatización de documentos y PDFs con VBA, Ghostscript y PDFtk.</li>
+            <li>Alertas por correo para mantenimientos, verificaciones y pólizas.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Desarrollador de Automatización — ABC Consultores</h3>
+          <div class="meta">2019 – 2022 · Remoto</div>
+          <ul>
+            <li>Macros de Excel para compresión masiva de PDFs y foliado automático.</li>
+            <li>Dashboards y reportes ejecutivos con gráficos y KPIs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Perfil</h2>
+        <p>Soy un profesional orientado a resultados con enfoque en optimizar procesos mediante automatización, bases de datos y herramientas de código abierto.</p>
+        <div class="chips">
+          <span class="chip">Gestión de activos</span>
+          <span class="chip">VBA / Excel</span>
+          <span class="chip">PHP / MySQL</span>
+          <span class="chip">Synology</span>
+          <span class="chip">GitHub Pages</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Proyectos Destacados</h2>
+        <div class="item">
+          <h3>Control de Activos Multicompañía</h3>
+          <div class="meta">PHP + MySQL + Synology</div>
+          <ul>
+            <li>Asignación de activos por proyecto, alertas, fotos de entrega y devolución.</li>
+            <li>Formularios responsivos con tema oscuro sobrio.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Compresión & Foliado de PDFs</h3>
+          <div class="meta">VBA + Ghostscript + PDFtk</div>
+          <ul>
+            <li>Parámetros de compresión desde Excel; control de perfiles y resolución.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Educación</h2>
+        <div class="item">
+          <h3>Licenciatura / Ingeniería (Ejemplo)</h3>
+          <div class="meta">Universidad Ejemplo — 2014 – 2018</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Habilidades</h2>
+        <div class="chips">
+          <span class="chip">Excel Avanzado (VBA)</span>
+          <span class="chip">PHP / HTML / CSS</span>
+          <span class="chip">MySQL / phpMyAdmin</span>
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">Automatización de flujos</span>
+          <span class="chip">Gestión de proyectos</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Certificaciones</h2>
+        <ul>
+          <li>Nombre de certificación — Año</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contacto</h2>
+        <p><strong>Email:</strong> <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a><br>
+           <strong>Teléfono:</strong> <a href="tel:+5215512345678">+52 1 55 1234 5678</a><br>
+           <strong>Ubicación:</strong> México</p>
+      </section>
+    </main>
+
+    <footer>
+      Última actualización: <span id="fecha"></span> · © <span id="anio"></span> Arturo Olvera
+    </footer>
+  </div>
+
+  <script>
+    const f = new Date();
+    document.getElementById('anio').textContent = f.getFullYear();
+    document.getElementById('fecha').textContent = f.toLocaleDateString('es-MX', {year:'numeric', month:'long', day:'numeric'});
+  </script>
+</body>
+</html>
