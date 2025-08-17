@@ -1,171 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRUD Retro con Búsqueda</title>
+  <title>Mi Web — Arturo O.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      background-color: #000;
-      color: #00ff00;
-      font-family: "Courier New", monospace;
-      margin: 0;
-      padding: 20px;
+    :root{
+      --bg:#0b0b0b; --fg:#c7f7c7; --muted:#8fdc8f; --accent:#38b000; --border:#1f1f1f;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+    header{padding:120px 20px 40px; text-align:center}
+    h1{font-size:32px; margin-bottom:10px}
+    p{color:var(--muted)}
+    nav{
+      position:fixed; top:0; left:0; width:100%; background:#0f0f0f; 
+      border-bottom:1px solid var(--border); padding:10px 20px; 
+      display:flex; justify-content:center; gap:16px; z-index:1000;
     }
-    .panel {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
+    nav a{
+      color:var(--fg); text-decoration:none; padding:10px 14px; 
+      border-radius:8px; border:1px solid transparent; transition:0.2s;
     }
-    input, select, button {
-      background: #000;
-      color: #00ff00;
-      border: 1px solid #00ff00;
-      padding: 5px 10px;
-      font-family: "Courier New", monospace;
-    }
-    button:hover {
-      background: #00ff00;
-      color: #000;
-      cursor: pointer;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #00ff00;
-      padding: 8px;
-      text-align: center;
-    }
-    th {
-      background-color: #003300;
-    }
+    nav a:hover{border:1px solid var(--accent); background:#102410}
+    main{max-width:800px; margin:0 auto; padding:20px; text-align:center}
+    footer{margin:40px 0; font-size:13px; color:var(--muted); text-align:center}
   </style>
 </head>
 <body>
-  <h1>Usuarios (CRUD Retro con Búsqueda)</h1>
+  <!-- Barra de navegación -->
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="cv.html">📄 Ver mi CV</a>
+    <a href="https://github.com/jarturolverah" target="_blank">💻 GitHub</a>
+    <a href="mailto:arturo@gmail.com">✉️ Contacto</a>
+  </nav>
 
-  <!-- Panel de acciones -->
-  <div class="panel">
-    <input type="text" id="nombre" placeholder="Nombre">
-    <input type="text" id="rol" placeholder="Rol">
-    <button onclick="agregarUsuario()">Agregar</button>
-    <input type="text" id="buscar" placeholder="Buscar usuario..." onkeyup="mostrarUsuarios()">
-    <select id="filtroRol" onchange="mostrarUsuarios()">
-      <option value="">-- Filtrar por Rol --</option>
-      <option value="Administrador">Administrador</option>
-      <option value="Usuario">Usuario</option>
-      <option value="Invitado">Invitado</option>
-    </select>
-    <button onclick="limpiarTodo()">🔄 Resetear</button>
-  </div>
+  <!-- Contenido principal -->
+  <header>
+    <h1>Bienvenido a mi página</h1>
+    <p>Soy Arturo O. — Gestión de activos, automatización y desarrollo web</p>
+  </header>
 
-  <!-- Tabla -->
-  <table id="tablaUsuarios">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Rol</th>
-        <th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <main>
+    <p>Este es mi espacio personal en GitHub Pages. Aquí comparto mis proyectos, herramientas y mi currículum.</p>
+    <p>Puedes revisar mi <a href="cv.html">CV en línea</a>, visitar mi <a href="https://github.com/jarturolverah" target="_blank">GitHub</a> o escribirme directamente por <a href="mailto:arturo@gmail.com">correo</a>.</p>
+  </main>
+
+  <footer>
+    © <span id="anio"></span> Arturo O. — GitHub Pages
+  </footer>
 
   <script>
-    // --- Base inicial ---
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [
-      { id: 1, nombre: "Arturo", rol: "Administrador" },
-      { id: 2, nombre: "María", rol: "Usuario" },
-      { id: 3, nombre: "Luis", rol: "Invitado" }
-    ];
-
-    function guardar() {
-      localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    }
-
-    function mostrarUsuarios() {
-      const tbody = document.querySelector("#tablaUsuarios tbody");
-      tbody.innerHTML = "";
-
-      const textoBuscar = document.getElementById("buscar").value.toLowerCase();
-      const filtroRol = document.getElementById("filtroRol").value;
-
-      usuarios
-        .filter(u => 
-          u.nombre.toLowerCase().includes(textoBuscar) &&
-          (filtroRol === "" || u.rol === filtroRol)
-        )
-        .forEach((u, index) => {
-          const fila = document.createElement("tr");
-          fila.innerHTML = `
-            <td>${u.id}</td>
-            <td contenteditable="true" onblur="editarUsuario(${index}, 'nombre', this.innerText)">${u.nombre}</td>
-            <td contenteditable="true" onblur="editarUsuario(${index}, 'rol', this.innerText)">${u.rol}</td>
-            <td>
-              <button onclick="borrarUsuario(${index})">Borrar</button>
-            </td>
-          `;
-          tbody.appendChild(fila);
-        });
-    }
-
-    function agregarUsuario() {
-      const nombre = document.getElementById("nombre").value.trim();
-      const rol = document.getElementById("rol").value.trim();
-      if (!nombre || !rol) {
-        alert("Completa los campos");
-        return;
-      }
-      const nuevo = {
-        id: usuarios.length ? usuarios[usuarios.length - 1].id + 1 : 1,
-        nombre,
-        rol
-      };
-      usuarios.push(nuevo);
-      guardar();
-      mostrarUsuarios();
-      document.getElementById("nombre").value = "";
-      document.getElementById("rol").value = "";
-    }
-
-    function editarUsuario(index, campo, valor) {
-      usuarios[index][campo] = valor;
-      guardar();
-    }
-
-    function borrarUsuario(index) {
-      if (confirm("¿Seguro que deseas borrar este usuario?")) {
-        usuarios.splice(index, 1);
-        guardar();
-        mostrarUsuarios();
-      }
-    }
-
-    function limpiarTodo() {
-      if (confirm("⚠️ Esto borrará todos los registros y restaurará los de ejemplo. ¿Continuar?")) {
-        usuarios = [
-          { id: 1, nombre: "Arturo", rol: "Administrador" },
-          { id: 2, nombre: "María", rol: "Usuario" },
-          { id: 3, nombre: "Luis", rol: "Invitado" }
-        ];
-        guardar();
-        document.getElementById("buscar").value = "";
-        document.getElementById("filtroRol").value = "";
-        mostrarUsuarios();
-      }
-    }
-
-    // --- Inicializar ---
-    mostrarUsuarios();
+    document.getElementById('anio').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

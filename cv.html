@@ -18,7 +18,7 @@
     h1{margin:0 0 4px; font-size:28px; line-height:1.2}
     .subtitle{margin:0; color:var(--muted)}
     .actions{margin-left:auto; display:flex; gap:10px; flex-wrap:wrap}
-    .btn{padding:10px 14px; border:1px solid var(--accent); border-radius:14px; background:#0f0; background:transparent; color:var(--fg); cursor:pointer}
+    .btn{padding:10px 14px; border:1px solid var(--accent); border-radius:14px; background:transparent; color:var(--fg); cursor:pointer}
     .btn:hover{background:#102410}
     .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:24px; margin-top:24px}
     section{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px}
@@ -31,7 +31,6 @@
     .chip{border:1px solid var(--border); padding:6px 10px; border-radius:999px; background:#0e0e0e}
     footer{color:#7abf7a; font-size:13px; text-align:center; padding:24px 0}
     @media (max-width:860px){ .grid{grid-template-columns:1fr} header{flex-direction:column; align-items:flex-start} .actions{margin-left:0} }
-    /* Versión para imprimir (fondo claro) */
     @media print{
       :root{--bg:#fff; --fg:#000; --muted:#333; --accent:#111; --card:#fff; --border:#ddd}
       a{text-decoration:underline}
@@ -45,52 +44,49 @@
 <body>
   <div class="wrap">
     <header>
-      <!-- Reemplaza assets/foto.jpg por tu ruta real o elimina la img -->
-      <img class="avatar" src="assets/foto.jpg" alt="Foto de Arturo">
+      <!-- Reemplaza assets/foto.jpg por tu foto -->
+      <img class="avatar" src="assets/foto.jpg" alt="">
       <div>
         <h1>Arturo O.</h1>
-        <p class="subtitle">Gestión de activos • Bases de datos • Automatización de flujos con VBA y PHP</p>
+        <p class="subtitle">Gestión de activos • Bases de datos • Automatización con VBA y PHP</p>
         <p class="meta">
-          <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a> · 
+          <a href="mailto:arturo@gmail.com">arturo@gmail.com</a> · 
           <a href="tel:+5215512345678">+52 1 55 1234 5678</a> · 
-          <a href="https://jarturolverah.github.io/miweb/" target="_blank" rel="noopener">Sitio web</a> ·
+          <a href="https://jarturolverah.github.io/miweb/" target="_blank" rel="noopener">Mi Web</a> ·
           <a href="https://github.com/jarturolverah" target="_blank" rel="noopener">GitHub</a>
         </p>
       </div>
       <div class="actions">
-        <!-- Si subes tu PDF a /docs/CV_Arturo_Olvera.pdf, este botón funcionará -->
         <a class="btn" href="docs/CV_Arturo_Olvera.pdf" download>⬇️ Descargar PDF</a>
-        <a class="btn" href="mailto:tu.correo@ejemplo.com?subject=Contacto%20por%20CV">✉️ Contactar</a>
+        <a class="btn" href="mailto:arturo@gmail.com?subject=Contacto%20por%20CV">✉️ Contactar</a>
       </div>
     </header>
 
     <main class="grid">
       <section>
         <h2>Experiencia</h2>
-
         <div class="item">
           <h3>Administrador de Sistemas — Empresa XYZ</h3>
-          <div class="meta">Ene 2023 – Actual · Ciudad de México (Híbrido)</div>
+          <div class="meta">2023 – Actual · Ciudad de México</div>
           <ul>
-            <li>Diseñé y desplegué base de datos de control de vehículos y activos en Synology + PHP.</li>
-            <li>Automatización de documentos y PDFs con VBA, Ghostscript y PDFtk.</li>
-            <li>Alertas por correo para mantenimientos, verificaciones y pólizas.</li>
+            <li>Desarrollo de bases de datos en Synology + PHP para control de activos.</li>
+            <li>Automatización de PDFs con VBA, Ghostscript y PDFtk.</li>
+            <li>Alertas automáticas por correo para mantenimientos y pólizas.</li>
           </ul>
         </div>
-
         <div class="item">
           <h3>Desarrollador de Automatización — ABC Consultores</h3>
           <div class="meta">2019 – 2022 · Remoto</div>
           <ul>
-            <li>Macros de Excel para compresión masiva de PDFs y foliado automático.</li>
-            <li>Dashboards y reportes ejecutivos con gráficos y KPIs.</li>
+            <li>Macros de Excel para compresión masiva y foliado de PDFs.</li>
+            <li>Dashboards de control y reportes con KPIs.</li>
           </ul>
         </div>
       </section>
 
       <section>
         <h2>Perfil</h2>
-        <p>Soy un profesional orientado a resultados con enfoque en optimizar procesos mediante automatización, bases de datos y herramientas de código abierto.</p>
+        <p>Profesional orientado a resultados, con experiencia en optimización de procesos, gestión de activos y automatización con herramientas de código abierto.</p>
         <div class="chips">
           <span class="chip">Gestión de activos</span>
           <span class="chip">VBA / Excel</span>
@@ -101,28 +97,9 @@
       </section>
 
       <section>
-        <h2>Proyectos Destacados</h2>
-        <div class="item">
-          <h3>Control de Activos Multicompañía</h3>
-          <div class="meta">PHP + MySQL + Synology</div>
-          <ul>
-            <li>Asignación de activos por proyecto, alertas, fotos de entrega y devolución.</li>
-            <li>Formularios responsivos con tema oscuro sobrio.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3>Compresión & Foliado de PDFs</h3>
-          <div class="meta">VBA + Ghostscript + PDFtk</div>
-          <ul>
-            <li>Parámetros de compresión desde Excel; control de perfiles y resolución.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
         <h2>Educación</h2>
         <div class="item">
-          <h3>Licenciatura / Ingeniería (Ejemplo)</h3>
+          <h3>Licenciatura / Ingeniería</h3>
           <div class="meta">Universidad Ejemplo — 2014 – 2018</div>
         </div>
       </section>
@@ -140,15 +117,26 @@
       </section>
 
       <section>
-        <h2>Certificaciones</h2>
-        <ul>
-          <li>Nombre de certificación — Año</li>
-        </ul>
+        <h2>Proyectos</h2>
+        <div class="item">
+          <h3>Control de Activos Multicompañía</h3>
+          <div class="meta">PHP + MySQL + Synology</div>
+          <ul>
+            <li>Asignación de activos, alertas y control documental.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Macros de Compresión & Foliado de PDFs</h3>
+          <div class="meta">VBA + Ghostscript + PDFtk</div>
+          <ul>
+            <li>Automatización con parámetros desde Excel.</li>
+          </ul>
+        </div>
       </section>
 
       <section>
         <h2>Contacto</h2>
-        <p><strong>Email:</strong> <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a><br>
+        <p><strong>Email:</strong> <a href="mailto:arturo@gmail.com">arturo@gmail.com</a><br>
            <strong>Teléfono:</strong> <a href="tel:+5215512345678">+52 1 55 1234 5678</a><br>
            <strong>Ubicación:</strong> México</p>
       </section>
@@ -162,7 +150,7 @@
   <script>
     const f = new Date();
     document.getElementById('anio').textContent = f.getFullYear();
-    document.getElementById('fecha').textContent = f.toLocaleDateString('es-MX', {year:'numeric', month:'long', day:'numeric'});
+    document.getElementById('fecha').textContent = f.toLocaleDateString('es-MX',{year:'numeric',month:'long',day:'numeric'});
   </script>
 </body>
 </html>
