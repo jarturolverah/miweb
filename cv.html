@@ -1,157 +1,649 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>CV — Arturo O.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Currículum Vitae de Arturo O.">
-  <style>
-    :root{
-      --bg:#0b0b0b; --fg:#c7f7c7; --muted:#8fdc8f; --accent:#38b000; --card:#111; --border:#1f1f1f;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif}
-    a{color:var(--muted); text-decoration:none} a:hover{color:#baffba; text-decoration:underline}
-    .wrap{max-width:920px; margin:auto; padding:24px}
-    header{display:flex; gap:20px; align-items:center; padding:24px; background:linear-gradient(180deg,#0f1a0f,transparent); border-bottom:1px solid var(--border)}
-    .avatar{width:96px; height:96px; border-radius:50%; object-fit:cover; border:2px solid var(--accent); background:#0a0a0a}
-    h1{margin:0 0 4px; font-size:28px; line-height:1.2}
-    .subtitle{margin:0; color:var(--muted)}
-    .actions{margin-left:auto; display:flex; gap:10px; flex-wrap:wrap}
-    .btn{padding:10px 14px; border:1px solid var(--accent); border-radius:14px; background:transparent; color:var(--fg); cursor:pointer}
-    .btn:hover{background:#102410}
-    .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:24px; margin-top:24px}
-    section{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px}
-    h2{margin:0 0 12px; font-size:18px; color:#b9ffb9}
-    h3{margin:12px 0 6px; font-size:16px}
-    .item{padding:10px 0; border-top:1px dashed var(--border)} .item:first-child{border-top:none}
-    .meta{font-size:13px; color:var(--muted)}
-    ul{margin:8px 0 0 18px}
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .chip{border:1px solid var(--border); padding:6px 10px; border-radius:999px; background:#0e0e0e}
-    footer{color:#7abf7a; font-size:13px; text-align:center; padding:24px 0}
-    @media (max-width:860px){ .grid{grid-template-columns:1fr} header{flex-direction:column; align-items:flex-start} .actions{margin-left:0} }
-    @media print{
-      :root{--bg:#fff; --fg:#000; --muted:#333; --accent:#111; --card:#fff; --border:#ddd}
-      a{text-decoration:underline}
-      .btn,.actions{display:none !important}
-      body{background:#fff; color:#000}
-      header{background:#fff; border-color:#ddd}
-      section{break-inside:avoid}
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <!-- Reemplaza assets/foto.jpg por tu foto -->
-      <img class="avatar" src="assets/foto.JPG" alt="">
-      <div>
-        <h1>Arturo O.</h1>
-        <p class="subtitle">Gestión de activos • Bases de datos • Automatización con VBA y PHP</p>
-        <p class="meta">
-          <a href="mailto:arturo@gmail.com">arturo@gmail.com</a> · 
-          <a href="tel:+5215512345678">+52 1 55 1234 5678</a> · 
-          <a href="https://jarturolverah.github.io/miweb/" target="_blank" rel="noopener">Mi Web</a> ·
-          <a href="https://github.com/jarturolverah" target="_blank" rel="noopener">GitHub</a>
-        </p>
-      </div>
-      <div class="actions">
-        <a class="btn" href="docs/CV_Arturo_Olvera.pdf" download>⬇️ Descargar PDF</a>
-        <a class="btn" href="mailto:arturo@gmail.com?subject=Contacto%20por%20CV">✉️ Contactar</a>
-      </div>
-    </header>
+﻿<!doctype html>
+<html lang='es'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Jorge Arturo Olvera Herrera</title>
+<style>
+body{background:#0b0b0b;color:#c7f7c7;font:16px/1.6 system-ui,sans-serif;margin:0;padding:0}
+a{color:#8fdc8f;text-decoration:none} a:hover{color:#baffba;text-decoration:underline}
+.wrap{max-width:920px;margin:auto;padding:24px}
+header{display:flex;gap:20px;align-items:center;padding:24px;background:linear-gradient(180deg,#0f1a0f,transparent);border-bottom:1px solid #1f1f1f}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #38b000;background:#0a0a0a}
+h1{margin:0 0 4px;font-size:28px;line-height:1.2}.subtitle{margin:0;color:#8fdc8f}
+.actions{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:10px 14px;border:1px solid #38b000;border-radius:14px;background:transparent;color:#c7f7c7;cursor:pointer}
+.btn:hover{background:#102410}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:24px}
+section{background:#111;border:1px solid #1f1f1f;border-radius:16px;padding:18px;margin-bottom:20px}
+h2{margin:0 0 12px;font-size:18px;color:#b9ffb9}
+h3{margin:12px 0 6px;font-size:16px}.item{padding:10px 0;border-top:1px dashed #1f1f1f}.item:first-child{border-top:none}
+.meta{font-size:13px;color:#8fdc8f} ul{margin:8px 0 0 18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid #1f1f1f;padding:6px 10px;border-radius:999px;background:#0e0e0e}
+footer{color:#7abf7a;font-size:13px;text-align:center;padding:24px 0}
+</style></head><body><div class='wrap'>
+<header>
+<img class='avatar' src='assets/COMEGALLETAS' alt='Foto'>
+<div><h1>Jorge Arturo Olvera Herrera</h1><p class='subtitle'>Manejo de Contrato • Gestión de Proyectos • Supervisión de Obra</p></div>
+<div class='actions'>
+<a class='btn' href='docs/CV_Arturo_Olvera.pdf' download>&#x2B07; Descargar PDF</a>
+<a class='btn' href='mailto:arturo@gmail.com?subject=Contacto%20por%20CV'>&#x2709; Contactar</a>
+</div></header>
+<main class='grid'>
+<div>
+<section><h2>DATOS GENERALES</h2>
+<p>Jorge Arturo Olvera Herrera</p>
+<p>OEHJ-751115-FV2</p>
+<p>15/11/1975</p>
+<p>Av. Puerta Real 4AB, Fraccionamiento Puerta Real II, C.P. 76910, Corregidora, Qro.</p>
+</section>
+<section><h2>ESTUDIOS</h2>
+<p>Facultad de Estudios Superiores Campus "Aragón", UNAM.</p>
+<p>Título: Ingeniero Civil. 1998.</p>
+<p>Cédula Profesional No.: 11508773</p>
+<p>Idiomas: español e inglés (60%)</p>
+</section>
+<section><h2>RESUMEN EXPERIENCIA</h2>
+<p>28 años de experiencia ejerciendo la profesión, experto en: Planeación, Programación y Gestión de Costos de Proyectos de Infraestructura, especialmente en vías de comunicación (Carreteras y Aeropuertos) y agua (Acueductos, PTAR, PTAN, etc), mediante la utilización de software especializado (Primavera P6, MS Project, Opus Ole, Presto, Neodata, Campeón, etc.); así como elaboración de Ajuste de Costos (escalatorias), gestión de conceptos fuera de catálogo para diferentes dependencias de gobierno (PEMEX, SICT, CFE, CONAGUA, etc.). Normatividad y Legislación aplicable a los Contratos de Obra Pública Federal tanto bajo la modalidad de Precio Alzado como Precios Unitarios, utilizables como fundamento para la obtención del reconocimiento de Afectaciones tanto en Tiempo como en Costo. Experiencia en proyectos EPC y O&M.</p>
+</section>
+<section><h2>PROGRAMAS INFORMÁTICOS</h2>
+<p>Microsoft Office, 365</p>
+<p>Access avanzado.</p>
+<p>Excel Avanzado y Programación.</p>
+<p>Programación en Visual Basic for Applications.</p>
+<p>Opus Soluciones Computacionales, 2015.</p>
+<p>Neodata, Precios Unitarios Versión WIN+</p>
+<p>Oracle Primavera P6, SYSTEC, 2012.</p>
+<p>AutoCAD 2015.</p>
+<p>STAAD Pro - 3D Structural Analysis and Design Software.</p>
+<p>SAP 2000 - Structural Analysis And Design.</p>
+<p>ETABS - Building Analysis And Design.</p>
+<p>SAFE - Analysis And Design Of Floor Systems.</p>
+</section>
+<section><h2>CURSOS Y DIPLOMAS</h2>
+<p>Estructuras de Concreto y Mampostería en Edificación del 03 de junio de 2017 al 09 de junio de 2018</p>
+<p>Access Avanzado</p>
+<p>Primavera Project</p>
+<p>Microsoft Project</p>
+<p>Neodata, Precios Unitarios</p>
+</section>
+<section><h2>DATOS DE CONTACTO</h2>
+<p>(+52) 442 359 6468</p>
+<p>arturo.olvera@outlook.com</p>
+<p>@r2d2_iacmexico</p>
+<p>arturo.olvera@iacmexico.com</p>
+</section>
+</div>
+<div>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/08/2025 - 01/08/2025</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Apoyo en la elaboracion de Ofertas para Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Referencia:</strong> M.I. Efraín Camacho Ruíz
+Gerente de Planeación y Control de Obra, Tren Maya T2
+Plaza del Mar, Prolongación 51 Ed. B, S/N Área Kim Pech Sector Fundadores, C.P. 24010, San Francisco Campeche, Cam.
++52 55 5249 8900
++52 55 8022 2912</div>
+<div class='item'><strong>Actividades:</strong> Apoyo en la elaboración e integración de las ofertas "Construcción y diseño de 30.70 km del Tramo I Ferroviario del tren de pasajeros Querétaro - Irapuato, Tramo: Apaseo el grande zona industrial – Querétaro zona industrial, subtramo del km 5+600 al km 36+300, incluye la construcción de Viaductos" y "Construcción y diseño de 100.05 km del tren de pasajeros Saltillo – Nuevo Laredo, segmentos 16 y 17 unión San Javier – Arroyo el Sauz"</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Transporte</div>
+<div class='item'><strong>Subsector:</strong> Ferroviario;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/07/2025 - 01/07/2025</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Prestación de servicios para el apoyo en la elaboración de las propuestas de licitaciones para la empresa La Peninsular Compañía Constructora, destinadas al Grupo Aeroportuario del Pacífico.</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> La Peninsular Compañía Constructora, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Sergio Sánchez Arzate
+Av. Paseo de la Reforma 383, Cuauhtémoc, 06500 Ciudad de México, CDMX
+Teléfono: 55 5511 4610</div>
+<div class='item'><strong>Actividades:</strong> Elaboración de las memorias descriptivas, organigramas, análisis de las matrices de riesgo, Oferta Económica asó como el análisis de ruta crítica de las ofertas: "Rehabilitación de pavimentos - Pista y Rodajes, en el Aeropuerto de Puerto Vallarta"; "Ampliación de plataforma comercial y rodajes, en el Aeropuerto de Guadalajara";  "Nuevo Ingreso Vial (Fase 1), en el Aeropuerto de Guadalajara"; "Nuevo Ingreso Vial (Fase 2), en el Aeropuerto de Guadalajara"; "Nuevo Ingreso Vial (Consolidado), en el Aeropuerto de Guadalajara" y "Plataforma Comercial Remota de dique A y Matrix, en el Aeropuerto Internacional de Tijuana"</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Transporte</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/04/2025 - 01/07/2025</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Elaboración de reclamo por Mayor Permanencia para la obra de la construcción del Tren Maya - Tramo 2 Escárcega – Calkiní para el consorcio Operadora CICSA, S.A. de C.V. – FCC Construcción, S.A.</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Referencia:</strong> M.I. Efraín Camacho Ruíz
+Gerente de Planeación y Control de Obra, Tren Maya T2
+Plaza del Mar, Prolongación 51 Ed. B, S/N Área Kim Pech Sector Fundadores, C.P. 24010, San Francisco Campeche, Cam.
++52 55 5249 8900
++52 55 8022 2912</div>
+<div class='item'><strong>Actividades:</strong> Análisis para la determinación del reconocimiento y pago del importe de los sobre costos derivados del Re-equilibrio Económico por la Mayor Permanencia del Proyecto.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Transporte</div>
+<div class='item'><strong>Subsector:</strong> Ferroviario;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/11/2024 - 01/03/2025</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Regularización de Estimaciones de Estaciones del Tren Maya Tramo II</div>
+<div class='item'><strong>Ciudad:</strong> Campeche, Cam.</div>
+<div class='item'><strong>Cliente:</strong> Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Referencia:</strong> M.I. Efraín Camacho Ruíz
+Gerente de Planeación y Control de Obra, Tren Maya T2
+Plaza del Mar, Prolongación 51 Ed. B, S/N Área Kim Pech Sector Fundadores, C.P. 24010, San Francisco Campeche, Cam.
++52 55 5249 8900
++52 55 8022 2912</div>
+<div class='item'><strong>Actividades:</strong> Apoyo en la regularización y cobro de las Estimaciones del Proyecto de Estaciones del Tren Maya tramo II</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Transporte</div>
+<div class='item'><strong>Subsector:</strong> Ferroviario;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/01/2023 - 20/08/2025</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Elaboración de reclamos para la obra de la construcción del Tren Maya - Tramo 2 Escárcega – Calkiní para el consorcio Operadora CICSA, S.A. de C.V. – FCC Construcción, S.A.</div>
+<div class='item'><strong>Ciudad:</strong> Campeche, Cam.</div>
+<div class='item'><strong>Cliente:</strong> Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Referencia:</strong> M.I. Efraín Camacho Ruíz
+Gerente de Planeación y Control de Obra, Tren Maya T2
+Plaza del Mar, Prolongación 51 Ed. B, S/N Área Kim Pech Sector Fundadores, C.P. 24010, San Francisco Campeche, Cam.
++52 55 5249 8900
++52 55 8022 2912</div>
+<div class='item'><strong>Actividades:</strong> Análisis para la determinación del reconocimiento y pago del importe de los sobre costos derivados del cambio de condiciones por la implementación de acciones y recursos asociados al programa de obra solicitado por la Entidad Contratante establecidas en el Octavo Convenio Modificatorio del Contrato reconociendo con ello las circunstancias extraordinarias y sus efectos ajenos a la responsabilidad del Contratista.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Transporte</div>
+<div class='item'><strong>Subsector:</strong> Ferroviario;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/01/2021 - 01/12/2022</div>
+<div class='item'><strong>Puesto:</strong> Departamento de Control de Costos.</div>
+<div class='item'><strong>Proyecto:</strong> Mezquite, Huizache y Calypso- Michelin</div>
+<div class='item'><strong>Ciudad:</strong> León, Gto.</div>
+<div class='item'><strong>Cliente:</strong> Industrias Michelin, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Eng. Chris Norris.
+Blvd. Edouard Michelin 302
+S/N Parque Industrial León Bajío, 37680, México
++ 1 (864) 631 5470</div>
+<div class='item'><strong>Actividades:</strong> Planta Industrial MICHELIN para la fabricación de neumáticos. Proyecto Mezquite/Huizache/Calypso en la Planta de León Guanajuato, México.  Responsable de revisión de precios asociados a órdenes de cambio, sobre costos de obra y procura de los proveedores en general para la construcción de obras civiles, electromecánicas y de instrumentación y control. Así como el control del flujo de efectivo del proyecto. Gestión de los cierres de los proyectos a nivel contractual y de costos.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Plantas Industriales</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/10/2020 - 01/12/2020</div>
+<div class='item'><strong>Puesto:</strong> Departamento de Análisis de Costos.</div>
+<div class='item'><strong>Proyecto:</strong> Tren Maya TII</div>
+<div class='item'><strong>Ciudad:</strong> Campeche, Cam.</div>
+<div class='item'><strong>Cliente:</strong> Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Referencia:</strong> M.I. Efraín Camacho Ruíz
+Gerente de Planeación y Control de Obra, Tren Maya T2
+Plaza del Mar, Prolongación 51 Ed. B, S/N Área Kim Pech Sector Fundadores, C.P. 24010, San Francisco Campeche, Cam.
++52 55 5249 8900
++52 55 8022 2912</div>
+<div class='item'><strong>Actividades:</strong> Elaboración, presentación, seguimiento de la conciliación de los análisis de costos fuera de catálogo del proyecto de obras de drenaje así como de obra inducida, elaboración y revisión de comunicados oficiales, detección y revisión de los trabajos fuera de catálogo, así como de las afectaciones tanto en tiempo como en costo; elaboración de los estudios que motivan y fundamente los Conceptos Fuera de Catálogo; la elaboración de los Estudios Técnicos Justificativos con los que se motivan y fundamentan las solicitudes de reconocimientos de Afectaciones en Tiempo y/o Costo; seguimiento y control de los comunicados oficiales así como la participación en su respuesta oficial, específicamente en lo que respecta a los aspectos legales y contractuales referentes al: Proyecto Integral de Obra Pública a Precio Mixto que incluye la elaboración del Proyecto Ejecutivo, suministro de materiales y Construcción de Plataforma y vía del Tren Maya correspondiente al Tramo Escárcega - Calkini.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Transporte</div>
+<div class='item'><strong>Subsector:</strong> Ferroviario;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/05/2020 - 01/09/2020</div>
+<div class='item'><strong>Puesto:</strong> Coordinador de Calidad, Seguridad y Ambiental</div>
+<div class='item'><strong>Proyecto:</strong> Certificación ISO - IAC</div>
+<div class='item'><strong>Ciudad:</strong> Querétaro, Qro.</div>
+<div class='item'><strong>Cliente:</strong> Ingeniería en Administración de Contratos, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Antonio Garibay Orozco.
+Tecnológico Norte 950-B, Piso 4A, Col. San Pablo, C.P. 76130, Santiago de Querétaro, Qro.
++ 52 442 2166570</div>
+<div class='item'><strong>Actividades:</strong> Revisión, elaboración e integración de procedimientos para la certificación de la empresa, reuniones semanales de coordinación para cumplimiento de hitos del procedimiento de certificación de los tres estándares: ISO; ISO 9001:2015, ISO 14001:2015 e ISO 45001:2018, capacitación de personal a distancia para los sistemas ISO 9001:2015 e ISO 45001:2018.  Control de cronograma de eventos, así como análisis de horas hombre invertidos en la certificación.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> ISO</div>
+<div class='item'><strong>Subsector:</strong> ISO</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/03/2020 - 01/04/2020</div>
+<div class='item'><strong>Puesto:</strong> Departamento de Planificación</div>
+<div class='item'><strong>Proyecto:</strong> Corporativo Scotiabank</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Constructora y Edificadora GIA+A, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. José Luís Bueno López.
+Ave Insurgentes Sur 553 Primer Piso, Escandón I Sección, Miguel Hidalgo, 11800 Ciudad de México.
++ 1 (55) 8503 8630</div>
+<div class='item'><strong>Actividades:</strong> Prestación de servicios consistentes en la elaboración de un programa de obra para los trabajos de remodelación y reestructuración, los cuales incluyen los trabajos de demoliciones, obra civil, sistemas de infraestructura, estructurales, mecánicos, eléctricos, de comunicación y control, de acabados interiores así como fachadas hasta el suministro de mobiliario para el Corporativo del Banco Scotiabank, ubicado en la Ciudad de México, con un costo total de $560,720,320.27 MXN </div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Planificación</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/09/2019 - 01/02/2020</div>
+<div class='item'><strong>Puesto:</strong> Coordinador de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Ampliación Línea 12</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Consorcio PRODEMEX – PROACON - DETERRA</div>
+<div class='item'><strong>Referencia:</strong> Arq. Mauricio Luna Pereda.
+San Antonio 133, Col. Carola,
+C.P. 01180, Del Álvaro Obregón, CDMX
++ 1 (55) 2585 4690</div>
+<div class='item'><strong>Actividades:</strong> Prestación de servicios consistentes en consultoría de manejo de contrato para la obra de trabajos de Construcción de la obra civil y obras Complementarias para la ampliación de la línea 12 del Sistema de transporte colectivo, primera etapa, dando seguimiento contractual, legal a los temas importantes del proyecto, gestión y conciliación de reclamos económicos para el Consorcio en los alcances referentes al contrato para la ampliación de la línea 12 del metro de la Ciudad de México.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Metro;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/05/2019 - 01/08/2019</div>
+<div class='item'><strong>Puesto:</strong> Departamento de Control de Costos.</div>
+<div class='item'><strong>Proyecto:</strong> Mezquite - Michelin</div>
+<div class='item'><strong>Ciudad:</strong> León, Gto.</div>
+<div class='item'><strong>Cliente:</strong> Industrias Michelin, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Eng. Chris Norris.
+Blvd. Edouard Michelin 302
+S/N Parque Industrial León Bajío, 37680, México
++ 1 (864) 631 5470</div>
+<div class='item'><strong>Actividades:</strong> Planta Industrial MICHELIN para la fabricación de neumáticos. Proyecto Mezquite (León Guanajuato, México).  Responsable de revisión de precios asociados a órdenes de cambio, sobre costos de obra y procura de todos los proveedores en general para la construcción de obras civiles, electromecánicas y de instrumentación y control. Gestión de cierre del proyecto a nivel contractual y de costos.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Plantas Industriales</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/04/2019 - 01/05/2019</div>
+<div class='item'><strong>Puesto:</strong> Gerencia del Departamento de Ajuste de Costos del proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Cierre del Proyecto: Construcción del Edificio Terminal del N.A.I.C.M.</div>
+<div class='item'><strong>Ciudad:</strong> Texcoco, Edo. Méx.</div>
+<div class='item'><strong>Cliente:</strong> Constructora Terminal Valle de México, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Gabriel Ramírez Ordaz.
+Texcoco de Mora, Edo. México.
++ 1 (554) 166 1400</div>
+<div class='item'><strong>Actividades:</strong> Gerente del departamento de ajuste de costos del proyecto para la construcción del Edificio Termina del Nuevo Aeropuerto de la Ciudad de México, elaborando y gestionando el cierre administrativo de los análisis de ajuste de costos, analizando e integrando el análisis de impacto de la obra estimada con los factores de ajuste determinados en el estudio "Cálculo del nuevo Factor de Actualización por Única Ocasión asociado a las condiciones plasmadas en el segundo Convenio Modificatorio de fecha 31 de julio de 2018 y a la Terminación Anticipada de fecha 29 de marzo de 2019", actualizando las estimaciones 01 al 11 de ajuste de costos y de la 01 a la 04 extraordinarias.  Análisis y aplicación de los últimos factores autorizados a las estimaciones pendientes de cobro para el cierre administrativo de dicho proyecto.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/02/2019 - 01/03/2019</div>
+<div class='item'><strong>Puesto:</strong> Control de Proyecto – elaboración de los programas de obra de los proyectos Tramo 1 y Tramo 2.</div>
+<div class='item'><strong>Proyecto:</strong> Ampliación a seis (6) carriles - corredor de las Playas (T1 y 2), Provincia de Panamá.</div>
+<div class='item'><strong>Ciudad:</strong> La Chorrera, Panamá.</div>
+<div class='item'><strong>Cliente:</strong> Operadora CICSA, S.A. de C.V. & FCC Construcción S.A.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Juan Pedro García.
+La Chorrera, Provincia de Panamá
++ 5 (076) 288 9184</div>
+<div class='item'><strong>Actividades:</strong> Elaboración del programa de obra del proyecto "Ampliación a seis (6) carriles - corredor de las Playas tramo 1: Chorrera – Santa Cruz, Provincia de Panamá Oeste", para la determinación de las afectaciones en tiempo para la integración de la reprogramación de la obra.  Elaboración del Programa de obra del proyecto "Ampliación a seis (6) carriles - corredor de las Playas tramo 2: Santa Cruz – San Carlos, Provincia de Panamá Oeste" para su implementación.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Carreteras</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/03/2017 - 01/01/2019</div>
+<div class='item'><strong>Puesto:</strong> Gerencia del Departamento de Ajuste de Costos del proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Construcción del Edificio Terminal del N.A.I.C.M.</div>
+<div class='item'><strong>Ciudad:</strong> Texcoco, Edo. Méx.</div>
+<div class='item'><strong>Cliente:</strong> Constructora Terminal Valle de México, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Gabriel Ramírez Ordaz.
+Texcoco de Mora, Edo. México.
++ 1 (554) 166 1400</div>
+<div class='item'><strong>Actividades:</strong> Gerente del departamento de ajuste de costos para la construcción del Edificio Termina del Nuevo Aeropuerto de la Ciudad de México.  Análisis para la determinación del Factor de Ajuste de Costos por Única Ocasión, así como los Factores de Ajuste de Costos Mensuales del periodo comprendido de diciembre 2016 a abril de 2019 para la aplicación en las estimaciones ordinarias y extraordinarias, seguimiento mensual del comportamiento de los indicadores económicos INPP y de los diferentes tipos de cambio que aplican en el proyecto lo anterior para la determinación de un factor de ajuste de costos optimizado.  Para la elaboración de cada uno de los estudios se llevaron a cabo reuniones de trabajo con personal del Grupo Aeroportuario de la Ciudad de México y Supervisión para la conciliación de índices y cantidades de obra pendiente de ejecutar y así determinar los diferentes estudios de ajustes de costos.  Seguimiento en cada una de las entregas hasta la aceptación total del mismo.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/09/2016 - 01/02/2017</div>
+<div class='item'><strong>Puesto:</strong> Gerencia de contratos del área de proyectos y operación de mina.</div>
+<div class='item'><strong>Proyecto:</strong> Mina a cielo abierto "El Peñasquito"</div>
+<div class='item'><strong>Ciudad:</strong> Mazapil, Zac.</div>
+<div class='item'><strong>Cliente:</strong> Goldcorp</div>
+<div class='item'><strong>Referencia:</strong> Ing. Luis Humberto Chaman Alarcón.
+Mazapil, Zacatecas,
++ 1 (775) 742 8312</div>
+<div class='item'><strong>Actividades:</strong> Gerencia del departamento de contratos de mina, elaborando y gestionando las diferentes licitaciones tanto de los nuevos proyectos, así como de las obras del área de operación, optimizando los tiempos de respuesta desde la elaboración hasta la adjudicación del proyecto. Revisión de las condiciones de contratación, clausulado y legislación aplicable. Análisis detallado de los precios integrantes de las propuestas, comparando entre ellas y analizando conforme a precios de mercado. Revisión de los proyectos de ingeniería detectando desviaciones, elaboración de las modificaciones de proyecto, así como elaboración de presupuestos base.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Minería</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/04/2016 - 01/09/2016</div>
+<div class='item'><strong>Puesto:</strong> Control de Proyectos.</div>
+<div class='item'><strong>Proyecto:</strong> Parque Eólico "Las Tres Mesas" y "La Mesa".</div>
+<div class='item'><strong>Ciudad:</strong> Ciudad Victoria, Tamps.</div>
+<div class='item'><strong>Cliente:</strong> Vestas México</div>
+<div class='item'><strong>Referencia:</strong> Ing. Heriberto Pimentel Piña.
+Reforma 115 Piso 7,
+Distrito Federal, México, 11000
++ 52 (443) 130 2544</div>
+<div class='item'><strong>Actividades:</strong> Control del proyecto Parque Eólico Las Tres Mesas y La Mesa, en el Estado de Tamaulipas. Responsable de la coordinación entre la obra civil y electromecánica, seguimiento de los avances del programa de construcción y de los suministros para determinar posibles desviaciones y proponer medidas de mitigación en caso de retrasos. Elaboración de curvas S, para representar los avances físicos – financieros.  Administración contractual de los subcontratos, verificación del cumplimiento de las fechas compromiso y la ruta crítica del proyecto, así como control y monitoreo de retrasos de subcontratistas, para en su caso, calcular y aplicar las retenciones y/o penas convencionales resultantes.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Energía</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/01/2016 - 01/03/2016</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Proyectos.</div>
+<div class='item'><strong>Proyecto:</strong> Supervisión de la Operación de la Autopista Salamanca-León</div>
+<div class='item'><strong>Ciudad:</strong> Salamanca - León, Gto.</div>
+<div class='item'><strong>Cliente:</strong> Grupo México</div>
+<div class='item'><strong>Referencia:</strong> Ing. José Luis Olayo.
+Km, 12.5 carretera Salamanca – León caseta Mendoza,
++ 52 (442) 353 6269</div>
+<div class='item'><strong>Actividades:</strong> Gerencia de la Supervisión Externa de Operación de la Autopista Salamanca-León, Tramos I y II con una longitud de 85 km, operación a cargo de la Concesionaria de Infraestructura del Bajío (Grupo México) y contratados por banco INVEX como Fiduciario del Fideicomiso No.1261, en el Estado de Guanajuato. Responsable de la verificación del cumplimiento de la prestación de los servicios a los usuarios de la Autopista. Elaboración de reportes de operación, seguimiento al programa de operación y al programa de conservaciones y mantenimiento, evaluaciones del nivel del servicio, seguimiento al procedimiento para calificar los servicios, reportes de la utilización del sistema inteligente de transporte.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Carreteras</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 01/01/2014 - 01/12/2015</div>
+<div class='item'><strong>Puesto:</strong> Encargado de la Administración Contractual.</div>
+<div class='item'><strong>Proyecto:</strong> Túnel Emisor Poniente II</div>
+<div class='item'><strong>Ciudad:</strong> Cuautitlán Izcalli, Edo. Méx.</div>
+<div class='item'><strong>Cliente:</strong> Consorcio Aldesa, RECSA, Proacon</div>
+<div class='item'><strong>Referencia:</strong> Ing. Juan David Pérez Hernández.
+Av. Hacienda Xalpa No. 177 37, Col. Hacienda del Parque, 54769 Cuautitlán Izcalli, Méx.
++ 52 (552) 430 3555</div>
+<div class='item'><strong>Actividades:</strong> Encargado de la Administración Contractual del Proyecto correspondiente a la Primera Etapa de Construcción del Túnel Emisor Poniente II y Proyecto y Rectificación del Trabajo a Cielo Abierto del Emisor Poniente para Ejecutarse en los Municipios de Cuautitlán Izcalli y Atizapán de Zaragoza, Estado de México (CONAGUA). Responsable de: la detección y revisión de los trabajos fuera de catálogo, así como de las afectaciones tanto en tiempo como en costo; la elaboración de Precios Unitarios Fuera de Catálogo; la elaboración de los paquetes (estudios) que motivan y fundamente los Conceptos Fuera de Catálogo; la elaboración de los Estudios Técnicos Justificativos con los que se motivan y fundamentan las solicitudes de reconocimientos de Afectaciones en Tiempo (Reprogramaciones) y/o Costo; el seguimiento y control de los comunicados oficiales (oficios, bitácora, minutas, actas, etc.), así como la participación en su respuesta oficial, específicamente en lo que respecta a los aspectos legales y contractuales.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Túnel;
+Agua</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2013 - 2014</div>
+<div class='item'><strong>Puesto:</strong> Planeación y Programación del Diseño, Ingeniería, Suministro de Equipos y Materiales, Construcción, Instalación, Pruebas, Apoyo Técnico, Fletes, Seguros, Aranceles, Impuestos y Manejo Aduanal, requeridos para la Central Geotermoeléctrica de los Humeros III</div>
+<div class='item'><strong>Proyecto:</strong> Central Geotérmica Los Humeros III - Fase A - 27 MW</div>
+<div class='item'><strong>Ciudad:</strong> Chignautla, Pue.</div>
+<div class='item'><strong>Cliente:</strong> Alstom Mexicana, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Gerardo Maldonado.
+Calle Montes Urales 727, Lomas - Virreyes, Lomas de Chapultepec IV Secc, 11000 Ciudad de México, CDMX
++ 52 (555) 434 6070</div>
+<div class='item'><strong>Actividades:</strong> Encargado de la Planeación y Programación del Proyecto asociado al Contrato de Obra PIF-012/2013 denominado 284 CG Los Humeros III, para el Diseño, Ingeniería, Suministro de Equipos y Materiales, Construcción, Instalación, Pruebas, Apoyo Técnico, Fletes, Seguros, Aranceles, Impuestos y Manejo Aduanal, requeridos para la Central Geotermoeléctrica de los Humeros III, Fase A, con una Capacidad Neta Garantizada de 25 MW a Condiciones de Diseño de Verano, incluyendo la Subestación de 115 kV. Encargado de: desglosar el Programa General de Ejecución Ofertado en un Nivel 3 a un Nivel 7; el seguimiento y control del desarrollo del Proyecto a ser plasmados en el Programa de Ejecución desarrollado en Primavera P6; desarrollo de las Curvas de Avance Físico – Financiero por cada disciplina (Ingeniería, Procura, Obra Civil, Obra Electromecánica, Instrumentación y Control y Comisionamiento).</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Energía</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2013 - 2013</div>
+<div class='item'><strong>Puesto:</strong> Coordinador de Auditoría Externa</div>
+<div class='item'><strong>Proyecto:</strong> Central Geotérmica Los Humeros III - Fase A - 27 MW</div>
+<div class='item'><strong>Ciudad:</strong> Poza Rica, Ver.</div>
+<div class='item'><strong>Cliente:</strong> IGSA, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Prolongacion Paseo de la Reforma 2977 Col, La Rosita, Cuajimalpa, Cuajimalpa de Morelos, 05000 Ciudad de México, CDMX
+Tel: +52 55 5626 5366</div>
+<div class='item'><strong>Actividades:</strong> Coordinador de la Auditoría a los diferentes subcontratos firmados para Roma M. Cogeneración, S.A. de C.V. para el Proyecto 216 CCC Poza Rica, ubicado en el municipio de Tihuatlán, en el estado de Veracruz.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Energía</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2013 - 2013</div>
+<div class='item'><strong>Puesto:</strong> Coordinador licitaciones</div>
+<div class='item'><strong>Proyecto:</strong> U-04 y U-10 Refinería Salamanca Gto.</div>
+<div class='item'><strong>Ciudad:</strong> Poza Rica, Ver.</div>
+<div class='item'><strong>Cliente:</strong> Honeywell</div>
+<div class='item'><strong>Referencia:</strong> Av. Santa Fe 94-TORRE A PISO 1, Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01210 Ciudad de México, CDMX
+Teléfono: 55 5081 0226</div>
+<div class='item'><strong>Actividades:</strong> Coordinador del proceso de licitación para las unidades U-04 y U-10 en la Refinería de Salamanca Guanajuato.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Energía</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2013 - 2013</div>
+<div class='item'><strong>Puesto:</strong> Administrador</div>
+<div class='item'><strong>Proyecto:</strong> Central Geotérmica Los Humeros II – 46 MW</div>
+<div class='item'><strong>Ciudad:</strong> Chignautla, Pue.</div>
+<div class='item'><strong>Cliente:</strong> Alstom Mexicana, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Gerardo Maldonado.
+Calle Montes Urales 727, Lomas - Virreyes, Lomas de Chapultepec IV Secc, 11000 Ciudad de México, CDMX
++ 52 (555) 434 6070</div>
+<div class='item'><strong>Actividades:</strong> Logística para la administración del refaccionamiento del contrato de Obra Pública Financiada a Precio Alzado del Proyecto 22 y CG Los Humeros II Fase B.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Energía</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2012 - 2012</div>
+<div class='item'><strong>Puesto:</strong> Coordinador de Supervisión.</div>
+<div class='item'><strong>Proyecto:</strong> Supervisión y control total del Proyecto de rehabilitación de la Autopista Arco Norte</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Impulsora del Desarrollo y el Empleo en América Latina S.A.B. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> C. Lago Zurich 17, Amp Granada, Miguel Hidalgo, 11529 Naucalpan de Juárez, CDMX</div>
+<div class='item'><strong>Actividades:</strong> Coordinador de la Supervisión y control total del Proyecto de rehabilitación de la Autopista Arco Norte. Actividades relativas a la supervisión de obras, visitas de inspección, control de topografías y de laboratorios. Reportes de avances, registros en bitácoras, participación en reuniones de seguimiento, elaboración de oficios, minutas, transmitas, etc.  Seguimiento a los programas de ejecución, elaborando reportes de los avances, indicando la utilización de maquinaria y mano de obra, avances por frentes, avances financieros (estimaciones), reportes fotográficos y videos de seguimiento.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Carretras</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2012 - 2012</div>
+<div class='item'><strong>Puesto:</strong> Coordinador de Proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Supervisión global de Obras Inmersas.</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Secretaría de Comunicaciones y Transporte</div>
+<div class='item'><strong>Referencia:</strong> Av. de los Insurgentes Sur 1089, Noche Buena, Benito Juárez, 03720 Ciudad de México, CDMX
+Teléfono: 55 5572 3900</div>
+<div class='item'><strong>Actividades:</strong> Coordinador del proyecto de la Supervisión global de Obras Inmersas en el Contexto de conservación de carreteras 2011, de los estados Morelia, Guanajuato y Guerrero, en asociación con la empresa SURFAX.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Carreteras</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2012 - 2012</div>
+<div class='item'><strong>Puesto:</strong> Coordinador de Proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Proyecto Geotérmico Los Azufres III Fase I - 50 MW</div>
+<div class='item'><strong>Ciudad:</strong> Morelia, Mich.</div>
+<div class='item'><strong>Cliente:</strong> Alstom Mexicana, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. Gerardo Maldonado.
+Calle Montes Urales 727, Lomas - Virreyes, Lomas de Chapultepec IV Secc, 11000 Ciudad de México, CDMX
++ 52 (555) 434 6070</div>
+<div class='item'><strong>Actividades:</strong> Coordinador del proceso de licitación de Central Geotermoeléctrica los Azufres III. Responsable de la integración de la propuesta técnica y económica, Programas Técnicos Generales, Programa de Utilización de Mano de Obra, de Maquinaria y Equipo y de Materiales. Programas Económicos de Erogaciones de Insumos, de Ejecución General de los Trabajos, de Erogaciones del Personal Indirecto (Directivo, Técnico y Administrativo), análisis de matrices de Precios Unitarios, Análisis de Costo Horario, Cálculo de FASAR, Cálculo de Indirectos de Obra, de financiamiento, análisis de utilidad y cargos adicionales.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Energía</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2010 - 2012</div>
+<div class='item'><strong>Puesto:</strong> Manejo de Contrato de la Supervisión de la Construcción y Puesta en servicio del Sistema Acueducto II.</div>
+<div class='item'><strong>Proyecto:</strong> Sistema Acueducto II – 1,500 lps</div>
+<div class='item'><strong>Ciudad:</strong> Querétaro, Qro.</div>
+<div class='item'><strong>Cliente:</strong> BANOBRAS / CEA Querétaro</div>
+<div class='item'><strong>Referencia:</strong> Av. Javier Barros Sierra 515, Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+Teléfono: 55 5270 1200</div>
+<div class='item'><strong>Actividades:</strong> Manejo de Contrato de la Supervisión de la Construcción y Puesta en servicio del Sistema Acueducto II para un gasto de 1,500 lps en el Estado de Querétaro. Responsable de Control y Administración de Obra, elaboración de reportes ejecutivos de avances al Fideicomiso, integrando los avances generales de obra por frentes de trabajo y por subsistema del Acueducto, reporte de manpower, de utilización de maquinaria y de avances físicos – financieros</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Agua</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Azvi Cointer de México, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2008 - 2010</div>
+<div class='item'><strong>Puesto:</strong> Gerente de Licitaciones y Concursos.</div>
+<div class='item'><strong>Proyecto:</strong> Departamento de Licitaciones</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Azvi Cointer de México, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Ing. José María Martínez Benavente.
+Paseo de la Reforma, 115, Piso 6,Of. 602
+Lomas de Chapultepec 11000
+México D.F.
++ 52 (553) 098 6701</div>
+<div class='item'><strong>Actividades:</strong> Gerente del Departamento de Licitaciones, Realización de diferentes Licitaciones dentro del Régimen de Concesión, para la Dirección General de Desarrollo Carretero, de la SCT, Libramiento de Atizapán de Zaragoza a Nicolás Romero. Desvío Ferroviario Laguna II en Mazatlán. Libramiento La Piedad. Libramiento de Celaya. Corredor Turístico Santa Clara – Río Colorado. Prolongación Avenida Solidaridad las Torres, Toluca Edo. México, Modernización carretera Mexicali - San Felipe, Baja California. Carretera Tapanatepec – Tuxtla Gutiérrez, Chiapas.</div>
+<div class='item'><strong>Tipo:</strong> Construcción</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Carretras;
+Túneles;
+Ferroviario</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Ingeniería en Administración de Contratos, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2002 - 2008</div>
+<div class='item'><strong>Puesto:</strong> Ingeniero de Proyecto</div>
+<div class='item'><strong>Proyecto:</strong> Varios Proyectos</div>
+<div class='item'><strong>Ciudad:</strong> Varios</div>
+<div class='item'><strong>Cliente:</strong> Varios</div>
+<div class='item'><strong>Referencia:</strong> Ing. Antonio Garibay Orozco
+Tecnológico Norte 950-B, Piso 4A, Col. San Pablo, C.P. 76130, Santiago de Querétaro, Qro.
++ 52 442 2166570</div>
+<div class='item'><strong>Actividades:</strong> Participando en las diferentes Residencias de Supervisión de Obra de la empresa en los siguientes proyectos: 
 
-    <main class="grid">
-      <section>
-        <h2>Experiencia</h2>
-        <div class="item">
-          <h3>Administrador de Sistemas — Empresa XYZ</h3>
-          <div class="meta">2023 – Actual · Ciudad de México</div>
-          <ul>
-            <li>Desarrollo de bases de datos en Synology + PHP para control de activos.</li>
-            <li>Automatización de PDFs con VBA, Ghostscript y PDFtk.</li>
-            <li>Alertas automáticas por correo para mantenimientos y pólizas.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3>Desarrollador de Automatización — ABC Consultores</h3>
-          <div class="meta">2019 – 2022 · Remoto</div>
-          <ul>
-            <li>Macros de Excel para compresión masiva y foliado de PDFs.</li>
-            <li>Dashboards de control y reportes con KPIs.</li>
-          </ul>
-        </div>
-      </section>
+Análisis de actualización de Costos para la empresa Obrascon Huarte Lain, S.A. y Electrificaciones y Montajes Guinovart, S.A., Unión Temporal de Empresas, así como análisis y cálculo de costos adicionales, en la obra del tren Suburbano Cuautitlán – Buenavista.
 
-      <section>
-        <h2>Perfil</h2>
-        <p>Profesional orientado a resultados, con experiencia en optimización de procesos, gestión de activos y automatización con herramientas de código abierto.</p>
-        <div class="chips">
-          <span class="chip">Gestión de activos</span>
-          <span class="chip">VBA / Excel</span>
-          <span class="chip">PHP / MySQL</span>
-          <span class="chip">Synology</span>
-          <span class="chip">GitHub Pages</span>
-        </div>
-      </section>
+Manejo de Contrato de la construcción de una Planta de Tratamiento de Aguas Negras – Refinería PEMEX Tampico, Madero – TINEP, S.A. de C.V. con un gasto de 1,100 l/seg
 
-      <section>
-        <h2>Educación</h2>
-        <div class="item">
-          <h3>Licenciatura / Ingeniería</h3>
-          <div class="meta">Universidad Ejemplo — 2014 – 2018</div>
-        </div>
-      </section>
+Proyecto Presa "El Cajón", Analista de precios unitarios y actualización de costos de trabajos adicionales, apoyo en la Supervisión de Montaje Electromecánico – DUERO Ingeniería, S.A. de C.V.
 
-      <section>
-        <h2>Habilidades</h2>
-        <div class="chips">
-          <span class="chip">Excel Avanzado (VBA)</span>
-          <span class="chip">PHP / HTML / CSS</span>
-          <span class="chip">MySQL / phpMyAdmin</span>
-          <span class="chip">Git / GitHub</span>
-          <span class="chip">Automatización de flujos</span>
-          <span class="chip">Gestión de proyectos</span>
-        </div>
-      </section>
+Coordinador de Supervisión de los trabajos de Supervisión y Control total del Aeropuerto Internacional de Hermosillo trabajos que comprenden Reencarpetado de la Pista con mezcla asfáltica de alto desempeño, Reposición de losas, trabajos de nivelación topográfica, toma de Pruebas de Laboratorio, tendido de la Carpeta Asfáltica de 5.0 cm. de espesor, reposición de ochenta y cinco losas de 6.00 x 5.80 x 0.30 m de espesor en rodaje "ALFA", desconchamientos, reposición y calafateo de los mismos en "Plataforma Comercial" Topografía y de la construcción de la "Plataforma Comercial de Equipos de Apoyo" 83.00 x 30.00 m, diseño geométrico de la Construcción del Camino para salida rápida del "Cuerpo de Rescate y Extinción de Incendios" para el Grupo Aeroportuario del Pacífico, S.A. de C.V.
 
-      <section>
-        <h2>Proyectos</h2>
-        <div class="item">
-          <h3>Control de Activos Multicompañía</h3>
-          <div class="meta">PHP + MySQL + Synology</div>
-          <ul>
-            <li>Asignación de activos, alertas y control documental.</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3>Macros de Compresión & Foliado de PDFs</h3>
-          <div class="meta">VBA + Ghostscript + PDFtk</div>
-          <ul>
-            <li>Automatización con parámetros desde Excel.</li>
-          </ul>
-        </div>
-      </section>
+Controlador de Contrato de la obra del Desazolve de 12 km del río Pánuco en Ciudad Madero Tamaulipas, México, - Dredging International.
 
-      <section>
-        <h2>Contacto</h2>
-        <p><strong>Email:</strong> <a href="mailto:arturo@gmail.com">arturo@gmail.com</a><br>
-           <strong>Teléfono:</strong> <a href="tel:+5215512345678">+52 1 55 1234 5678</a><br>
-           <strong>Ubicación:</strong> México</p>
-      </section>
-    </main>
+Elaboración de Licitación para la empresa Dredging International, para el contrato de Desazolve del canal Pánuco en Ciudad Madero Tamaulipas, - Dredging International.
 
-    <footer>
-      Última actualización: <span id="fecha"></span> · © <span id="anio"></span> Arturo O.
-    </footer>
-  </div>
+Análisis de Actualización de costos y recuperación por incremento en el costo del acero para la Hidroeléctrica "EL Botello" – CEGELEC.
 
-  <script>
-    const f = new Date();
-    document.getElementById('anio').textContent = f.getFullYear();
-    document.getElementById('fecha').textContent = f.toLocaleDateString('es-MX',{year:'numeric',month:'long',day:'numeric'});
-  </script>
-</body>
-</html>
+Elaboración y gestión de los análisis de actualización de costos y recuperación por incremento en el costo del acero para el proyecto de líneas de transmisión y Subestaciones Yautepec – Topilejo – ISOLUX.
 
+Análisis de recuperación por incremento en el costo del acero para los proyectos de Líneas de Transmisión y Subestaciones 610 y 613 – ISOLUX. Proyecto Termoeléctrico Guerrero Negro II – ENERPOWER ISOLUX.</div>
+<div class='item'><strong>Tipo:</strong> Manejo de Contrato</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Ferroviario;
+Agua;
+Energía;
+Aeropuertos;
+Reclamos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: EMINSA – Joaquín Romero Aparicio, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2002 - 2002</div>
+<div class='item'><strong>Puesto:</strong> Ingeniero de Proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Rehabilitación del camino perimetral del Aeropuerto Internacional de la Ciudad de México, como Administrador General de la Obra.</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Arq. Joaquín Romero Aparicio
+Pennsylvania No. 26 5to Piso, Col. Nápoles, C.P. 03810, México, D.F.
++ 52 (555) 534 1588</div>
+<div class='item'><strong>Actividades:</strong> Rehabilitación del camino perimetral del Aeropuerto Internacional de la Ciudad de México, como Administrador General de la Obra.</div>
+<div class='item'><strong>Tipo:</strong> Construcción</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: AVE Ingeniería, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2001 - 2002</div>
+<div class='item'><strong>Puesto:</strong> Ingeniero de Proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Varios Proyectos</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Gobierno de la Ciudad de México</div>
+<div class='item'><strong>Referencia:</strong> Ing. Juan Manuel Angel Ramirez
+Calle Torno No. 127-A, Int. 203, Col. Sevilla, Del. Venustiano Carranza, México</div>
+<div class='item'><strong>Actividades:</strong> Trabajos de Supervisión y construcción de obra para diferentes Delegaciones en el Distrito Federal, entre las cuales destacan: Elaboración de Catálogos de Primera necesidad así como análisis de costo e ingeniería en 147 Planteles de nivel preprimaria en Iztapalapa, Construcción de Muros de Contención en Barrio Alto y Barrio Bajo para la Delegación Gustavo A. Madero, Levantamiento, cálculo y dibujo de red de agua potable en diferentes colonias de la Delegación Iztapalapa, Levantamiento, cálculo y dibujo de red de agua potable en la Colonia Moctezuma 1ra Sección, Supervisión y control total de las obras de Restructuración de 4 centros culturales y 2 mercados en la Delegación Xochimilco.</div>
+<div class='item'><strong>Tipo:</strong> Supervisión</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Análisis de Costos;
+Edificación;
+Agua</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Joaquín Romero Aparicio, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 2001 - 2001</div>
+<div class='item'><strong>Puesto:</strong> Ingeniero de Proyecto.</div>
+<div class='item'><strong>Proyecto:</strong> Construcción de la Ampliación del Cuerpo de Rescate y Extinción de Incendios, en el Aeropuerto de Ciudad Obregón, Sonora, México.</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Grupo Aeroportuario del Pacífico</div>
+<div class='item'><strong>Referencia:</strong> Arq. Joaquín Romero Aparicio
+Pennsylvania No. 26 5to Piso, Col. Nápoles, C.P. 03810, México, D.F.
++ 52 (555) 534 1588</div>
+<div class='item'><strong>Actividades:</strong> Construcción de la Ampliación del Cuerpo de Rescate y Extinción de Incendios, en el Aeropuerto de Ciudad Obregón, Sonora, México.</div>
+<div class='item'><strong>Tipo:</strong> Construcción</div>
+<div class='item'><strong>Sector:</strong> Infraestructura</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos;
+Edificación</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 1998 - 2001</div>
+<div class='item'><strong>Puesto:</strong> Subgerente de la Ayudantía Técnica</div>
+<div class='item'><strong>Proyecto:</strong> Proyectos de Construcción, Mantenimiento y Conservación del AICM</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México, CDMX
+Teléfono: 55 2482 2400</div>
+<div class='item'><strong>Actividades:</strong> Control de Obra, Estimaciones, Anteproyecto y Proyecto de las diferentes Obras de Mantenimiento Anual del Aeropuerto Internacional de la Ciudad de México.  Jefe de la Ayudantía Técnica para la Gerencia de Obras y Conservación del A.I.C.M.  Control de obra, revisión de estimaciones, análisis de precios unitarios, elaboración de reportes de avance y programación de obra, así como procuración de equipos, obra civil y montaje electromecánico.</div>
+<div class='item'><strong>Tipo:</strong> Gobierno</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos</div>
+</section>
+<section>
+<h2>Experiencia Profesional</h2>
+<div class='item'><h3>Empresa: Aeropuertos y Servicios Auxiliares
+Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.</h3></div>
+<div class='item'><strong>Periodo:</strong> 1997 - 1998</div>
+<div class='item'><strong>Puesto:</strong> Jefe de la Ayudantía Técnica</div>
+<div class='item'><strong>Proyecto:</strong> Proyectos de Construcción, Mantenimiento y Conservación del AICM</div>
+<div class='item'><strong>Ciudad:</strong> CDMX, México.</div>
+<div class='item'><strong>Cliente:</strong> Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.</div>
+<div class='item'><strong>Referencia:</strong> Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México, CDMX
+Teléfono: 55 2482 2400</div>
+<div class='item'><strong>Actividades:</strong> Control de Obra, Estimaciones, Anteproyecto y Proyecto de las diferentes Obras de Mantenimiento Anuales del Aeropuerto Internacional de la Ciudad de México.  Supervisor de Obras Civiles como rehabilitación de pistas, de rodajes, mantenimiento al sistema de ayudas visuales e instalaciones en General del Edificio Terminal del A.I.C.M.</div>
+<div class='item'><strong>Tipo:</strong> Gobierno</div>
+<div class='item'><strong>Sector:</strong> Construcción</div>
+<div class='item'><strong>Subsector:</strong> Aeropuertos</div>
+</section>
+</div>
+</main>
+<footer>Última actualización: <span id='fecha'></span> · © <span id='anio'></span> Jorge Arturo Olvera Herrera</footer>
+<script>const f=new Date();document.getElementById('anio').textContent=f.getFullYear();document.getElementById('fecha').textContent=f.toLocaleDateString('es-MX',{year:'numeric',month:'long',day:'numeric'});</script>
+</div></body></html>
